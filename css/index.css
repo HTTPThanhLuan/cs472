@@ -8,12 +8,13 @@ body {
 
 /* Style the header */
 header {
-  background-image:url("../images/banner.jpg");
+  background-image:url("../images/bg-line-tan.png");
   /*background-color: #666;*/
   padding: 30px;
   text-align: center;
   font-size: 35px;
-  color: white;
+  color: black;
+  height:150px;
 }
 
 /* Create two columns/boxes that floats next to each other */
@@ -54,6 +55,16 @@ footer {
   color: white;
 }
 
+/*Avata*/
+div.avata{
+   position: absolute;
+   top:6px;
+   
+}
+div.avata img{
+	width:150px;
+}
+
 /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
 @media (max-width: 600px) {
   nav, article {
@@ -61,9 +72,3 @@ footer {
     height: auto;
   }
   
-/*Avata*/
-div.avata{
-   border: 3px solid #73AD21;
-   position: absolute;
-   top:10px;
-}
