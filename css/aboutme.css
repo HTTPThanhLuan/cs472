@@ -1,0 +1,19 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;  
+  font-size:16px;
+  font-weight:none;
+}
+
+div.sad{
+	display:inline-block;
+}
+
+div.happy{
+	display:inline-block;
+}
+
+div>img{
+	
+	width:500px;
+
+}
