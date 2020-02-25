@@ -41,7 +41,7 @@ article {
 }
 
 /* Clear floats after the columns */
-section:after {
+div.section:after {
   content: "";
   display: table;
   clear: both;
