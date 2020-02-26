@@ -1,19 +1,29 @@
-body {
-  font-family: Arial, Helvetica, sans-serif;  
-  font-size:16px;
-  font-weight:none;
+.aboutme {
+ 
 }
 
 div.sad{
 	display:inline-block;
+	text-align:center;
+}
+div.sad img {
+	height:280px;
 }
 
 div.happy{
 	display:inline-block;
+	text-align:center;
 }
 
 div>img{
 	
 	width:500px;
 
+}
+
+
+
+span.favorite{
+	color:pink;
+	font-weight:bold;
 }
