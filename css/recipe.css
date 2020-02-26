@@ -39,6 +39,7 @@ a{
 .dirName{
 	font-weight:bold;
 }
+
 .tb{
 	text-decoration:underline;
 }
@@ -46,5 +47,10 @@ a{
 .comment{
 	background-color:#FFFFA8;
 	font-style:italic;
+	margin:0px 50px 0px 50px;
+}
+
+li .intext{
+	padding-left:5px;
 }
 
