@@ -87,14 +87,11 @@ body{
 	
 }
 
-.review img{
+.review, .personreview img{
 	float:left;
 	margin-right:5px;
 }
-.personreview img{
-	float:left;
-	margin-right:5px;
-}
+
 .personreview .pub{
 	font-style:italic;
 }
