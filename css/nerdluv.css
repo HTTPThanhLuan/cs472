@@ -1,0 +1,49 @@
+body{
+	margin:0px;
+	padding:0px;
+}
+.content{
+	margin:auto;
+	max-width:500px;
+}
+
+.row{
+	width:100%;
+	margin-bottom:10px;
+	display:flex;
+}
+.row .columleft{
+	width:150px;  
+	float:left;
+	
+}
+
+.row .columright{
+	width:318px;
+    float:left;	
+}
+
+.back img{
+	width:20px;
+	vertical-align:bottom;
+}
+.validation {
+	margin-top:50px;
+}
+input[type="submit"]{
+	background-color:rgb(255,170,170);
+	font-weight:bold;
+}
+.columright a{
+	color:red;
+    text-decoration:none;
+}
+legend{
+	background-color: white;
+    border: 2px outset gray;
+}
+fieldset{
+	border-radius:5px;
+	box-shadow: 2px 2px gray;
+	background-color:rgb(224,224,255);
+}

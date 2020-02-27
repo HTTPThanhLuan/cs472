@@ -1,0 +1,11 @@
+
+body{
+	margin:0px;
+	padding:0px;
+}
+.formgrade{
+	max-width:400px;
+	margin:auto;
+	border:2px solid gray;
+	
+}
