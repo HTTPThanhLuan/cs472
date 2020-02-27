@@ -1,0 +1,29 @@
+  div {
+  margin: 10px;
+  /*padding: 1px;*/
+  /*border: 1px solid white;*/
+}
+
+.a {
+  background: #777;
+}
+
+.b {
+  background: #999;
+}
+
+.c {
+  background: #bbb;
+}
+
+.d {
+  background: #ddd;
+}
+
+.e {
+  background: red;
+  }
+  
+  .k {
+  background: blue;
+  }
