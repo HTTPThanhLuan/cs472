@@ -1,0 +1,48 @@
+State Management Quiz 
+ 
+1.  Can post requests be bookmarked? What are the problems? 
+    No, It can not. The post request send data in request body, not in url.
+2.  What is the purpose of request dispatching? 
+   Forward the request to other servlet in the same website 
+
+3.  What is the difference between redirect and request dispatch? 
+   .Redirect
+     - URL in address bar of browser will change
+	 - only http message sent
+   .Request dispatch (forward)
+     - URL in address bar will remain unchanged
+	 - send request and response objects 
+	 
+4.  What is an attribute ? 
+    Attribute is name vale pair.
+	It is a object bound in HttpServletRequest (request), HttpSession (session), ServletContext (application). and it has getAttribute, setAttribute, RemoveAttribute, GetAtributeNames methods. 
+  
+	
+5.  What is the difference between attributes and parameters? 
+	attributes is object on the server side and are used for sharing sate between servlets. Parameter is text which is used to send infomation from the browser to the server.
+6.  What are dangers of using attributes? 
+    it is not thread safe in global scope.
+
+7.  What does it mean to say that http is stateless? Give an example of a stateful protocol.
+     after the web server reponses to a request there is no memory of the request or who sent it
+	 TCP (transmission control protocol)
+8.  Give 5 different methods for maintaining state information (count each attribute scope as one method). 
+     1. Request scope (destroyed when servlet finishes processing request)
+	 2. Session scope (destroyed when user close browser)
+	 3. Application Scope (destroyed when Container stoped)
+	 4. Cookie save in browser 
+	     temporary (deleted when browser closed)
+		 permanent.
+	 5. hidden fields on the form.
+9.  How long does a session last? 
+     when time expires, the time is set in config. 
+10.  What is a cookie, and how long does a cookie last? 
+     cookie is stored on the browser. and it is sent to server every request. 
+	 and cookie is created by server and server send cookie to browser.
+	 there are two type of cookie
+	 1. temporary. (deleted when browser closed)
+	 2. pamernent. (it has a max age set)
+11.  What is the purpose of URL rewriting? 
+     create a friendly url to user.  
+12.  Why does the request attribute report ‘null’ for the maintaining state demo? 
+     if attribute doest not exist the key.
