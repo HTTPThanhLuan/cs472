@@ -1,0 +1,32 @@
+Introduction to Servlets Quiz
+1. What is the difference between a web server and a web container?
+- Web server: serves static content - files, images, pdfs, videos, exactly as they are on the server machine, can't handle behavior like login, data lookups,... and can't save data to the server.
+- Web container: manages servlets, jsp.
+
+2. What is a servlet?
+- A servlet is a Java class that extends the capabilities of servers that host applications access by means of a request-response programming model.
+
+3. How do web servers and web containers interact with servlets?
+- When a request comes to the web server, if the server sees the request is for a servlet, it passes the request data to the servlet container.
+- The servlet container locates the servlet, creates request and response objects and passes them to the servlet, and returns to the web server the response stream that the servlet produces.
+
+4. Who creates request objects?
+- Servlet container
+
+5. What are the states in the servlet lifecycle?
+- Load
+- Create
+- Init
+- Service
+- Destroy
+6. Who calls init and when?
+- Servlet container calls init after load servlet and instantiate servlet.
+
+7. Which of init, service, and doGet should you override?
+- doGet
+
+8. In what sense are servlets multi-threaded?
+- Each request runs ina separate thread, new thread will be created for every request and call service() on the thread.
+
+9. What are the implications of this for servlet instance variables?
+- Only have 1 instance of servlet and all thread share instance variables.

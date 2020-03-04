@@ -1,0 +1,51 @@
+1. Can post requests be bookmarked? What are the problems?
+	No, i can not. In the POST method the data is passed in the HTTP request body so it can't be book marked.
+	
+
+2. What is the purpose of request dispatching?
+The the request dispatching dispatch the request to another resource it may be html, servlet or jsp.
+It is one of the way of servlet collaboration
+
+
+3. What is the difference between redirect and request dispatch?
+   Redirect is directing 
+
+4. What is an attribute ?
+5. What is the difference between attributes and parameters?
+6. What are dangers of using attributes?
+7. What does it mean to say that http is stateless? Give an example of a stateful protocol.
+8. Give 5 different methods for maintaining state information (count each attribute scope as one method).
+	Container managed state (3 scopes)
+	1. request scope: destroyed when servlet finishes processing request
+	2. session scope: destroyed when user closes browser
+	3. application scope destroyed when Container stopped.
+	4. Cookies saved on browser,
+	temporary (deleted when the browser closes)
+	permanent
+	5. Hidden fields on a form
+
+
+9. How long does a session last?
+	Client side
+		•Browser discards all “temporary” cookies when it closes
+		•Every tab or window of browser will have access to all cookies
+	3 ways for container to remove sessions
+		•session timeout in the DD
+		•session.setMaxInactiveInterval(20*60); //seconds
+		•session.invalidate(); //immediate
+	
+
+10. What is a cookie, and how long does a cookie last?
+	can be used for other things besides implementing sessions
+	•temporary cookie
+	•browser removes when it closes
+	•this is default
+	•session cookies are like this
+	•permanent cookie
+	•a cookie that has a max age set
+
+
+11. What is the purpose of URL rewriting?
+
+
+12. Why does the request attribute report ‘null’ for the maintaining state demo?

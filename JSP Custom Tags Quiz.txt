@@ -1,0 +1,48 @@
+JSP Custom Tags Quiz 
+ 
+ 
+1.  Rewrite the JSP page in the first demo (forEach) to use scripting instead of the JSTL forEach.
+    
+        <c:forEach var="beer" items="${result}">
+		  <tr>
+			<td>${beer}</td>
+		  </tr>
+	</c:forEach>
+ =>
+         <%
+	         List result = (List)request.getAttribute("result");
+	         for(Integer i=0; i<result.size(); i++ )
+		     { 
+	 %>
+	 <p> <%= result.get(i) %> </p>
+	 <%
+		     }
+	 %>
+   
+
+2.  How do custom tags relate to JSTL? 
+    both of them are components, they allow developer reuse common components. 
+    JSTL is that tags is built in.
+    Custom tags is that the developer difine their own tags. 
+
+3.  What is the role of the URI in the TLD and the taglib directive?  
+    to locate where to find the tag library description files.
+     
+
+4. What is a tag handler class?
+   implements the tag functionality. 
+
+5.  What is the role of attribute setters in a tag handler class? 
+    attribute setters is called to set value from tag attribute.
+    using JavaBean naming conventions to figure out the attribute setter: example: "user" is "setUser"
+
+6.  What is the role of the doTag() method in a tag handler class?  
+    write out html in JSP page with conditions in attribute setters.
+
+7.  What does the operation getJspContext().getOut().write(“Hi Bob”) do when called in a doTag() method?  
+    write out the Hi Bob in jsp page.
+
+8.  What does the operation getJspBody().invoke(null) do when called in a doTag() method?  
+  When getJspBody().invoke(null) is called, it is the output resulting from the execution of the tag body's JSP content that gets passed to the client, not the JSP code itself.
+            
+ 
