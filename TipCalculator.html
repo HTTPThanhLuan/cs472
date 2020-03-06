@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		<script>
+		function calcTip() {
+			//var subtotalElem = document.getElementById("subtotal");
+			//var tipElem = document.getElementById("tip");
+			var totalElem = document.getElementById('total');
+			var subtotal = document.getElementById("subtotal");
+			var tip = document.getElementById("tip");
+			var total = parseInt(subtotal.value) + parseInt(tip.value);
+			totalElem.innerHTML = '$' + total;
+		}
+		</script>
+	      <link href="css/tip.css" rel="stylesheet" type="text/css">
+	   
+		<title>Tip Calculator</title>
+</head>
+
+
+	<body data-gr-c-s-loaded="true" cz-shortcut-listen="true" style="">
+		<h1>
+			<img id="logo" src="./TipCalculator_files/calc.jpg" alt="++--**//">
+			  Tip Calculator
+		</h1>
+
+		<div>
+			<label><input id="subtotal" type="text"> $ Subtotal</label>
+		</div>
+
+		<div>
+			<label><input id="tip" type="text"> % Tip</label>
+		</div>
+
+		<div>
+			<button id="btn" onclick="calcTip();">Calculate Tip</button>
+		</div>
+
+		<hr>
+
+		<div>
+			<h2>Your total:</h2>
+			<p id="total">$0.00</p>
+		</div>
+	
+
+</body></html>
