@@ -10,7 +10,7 @@
 			var totalElem = document.getElementById('total');
 			var subtotal = document.getElementById("subtotal");
 			var tip = document.getElementById("tip");
-			var total = parseInt(subtotal.value) + parseInt(tip.value);
+			var total = parseInt(subtotal.value) + (parseInt(tip.value) * parseInt(subtotal.value))/100;
 			totalElem.innerHTML = '$' + total;
 		}
 		</script>
