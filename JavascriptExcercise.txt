@@ -28,7 +28,7 @@ Javascript Exercises
 }
 
 - function booyah2() {
-    return function() {
+    return function() { 
         alert('BOOYAH!');
     }
 }
