@@ -7,7 +7,7 @@ function myOnClick(){
 	textarea.css("font-size",fontsize +"pt")
 	//textarea.style.fontSize=currentFontSize= + 2;
 	if(timer===null)
-	  timer = setInterval(myOnClick,5000);
+	  timer = setInterval(myOnClick,2000);
     // else{
 	//	clearInterval(timer); 
 	//	timer=null;
