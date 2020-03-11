@@ -25,6 +25,7 @@ nav {
   height: 400px; /* only for demonstration, should be removed */
   background: #ccc;
   padding: 20px;
+  overflow:scroll;
 }
 
 /* Style the list inside the menu */
