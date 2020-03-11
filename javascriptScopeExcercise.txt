@@ -1,0 +1,60 @@
+Javascript Scope Exercises
+
+1. Determine what this Javascript code will print out (without running it): 
+        x = 1; var a = 5; var b = 10; 
+        var c = function(a, b, c)
+         {
+         var x = 10; 
+        document.write(x); 
+        document.write(a); 
+        var f = function(a, b, c) { 
+        b = a; 
+        document.write(b); 
+        b = c; 
+        var x = 5; } 
+        f(a,b,c); 
+        document.write(b); 
+        } 
+        c(8,9,10); 
+        document.write(b); 
+        document.write(x); } 
+        =>output :  10 , 8, 8, 10 , 10, 1
+
+2. What is the difference between a method and function? 
+        => a method and function are the same meaning, scope is what you should be focusing on, not the sematic of function vs method. The context of this within the function/ method is the key. 
+
+3. What does 'this' refer to when used in a Java method?
+        => in java this works as a reference to the current Object, whose method is being invoked 
+
+4. What does 'this' refer to when used in a JavaScript method? 
+           - In a method, this refers to the owner object.
+
+5. What does 'this' refer to when used in a JavaScript constructor function? 
+        =>In a constructor function this does not have a value. It is a substitute for the new object. The value of this will become the new object when a new object is created.
+
+6. Assume object x is the prototype for object y in Javascript. Object x has a method f( ) containing keyword 'this'. When f is called by x.f( ), what does 'this' refer to? 
+        =>this refer to object x
+
+7. What is a free variable in JavaScript? 
+        => A variable referred to by a function that is not one of its parameters or local variables.
+
+8. Create an object that has properties with name = "fred" and major="music" and a property that is a function that takes 2 numbers and returns the smallest of the two, or the square of the two if they are equal. 
+        var obj = {
+        name: "fred",
+        major: "music",
+        compute : function(x,y){
+          if(x!=y) return x < y ? x:y;
+          else return x*y;
+         }
+        }
+        
+9. Write Javascript code for creating three Employee objects using the "new" keyword and a constructor function. Employee objects have the following fields: name, salary, position.
+        function Employee(name, salary, position) 
+        { this. name = name;
+         this. salary = salary; 
+        this. Position= position;
+        }
+        Var emp1 = new Employee("Tom",2000,"Manager");
+        Var emp2 = new Employee("David",1000,"Staff");
+        Var emp3 = new Employee("Peter",2000,"Staff");
+    
