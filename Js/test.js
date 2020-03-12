@@ -1,12 +1,15 @@
-var funcs = []; 
 
-for (let i = 0; i < 5; i++) 
-{
-	funcs[i] = function(i) {
-		return i; 
-	};
-}  
 
-console.log(funcs[0]());
-console.log(funcs[1]());
+var a=(x,y,z)=> { 
+			var max=x;
+			if(y>max)
+			   max=y;
+			if(z> max)
+			   max=z;
+			   
+			   return max;
+	   }
+	   
+	   
 
+console.log(a(1,2,3));

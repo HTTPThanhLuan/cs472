@@ -6,7 +6,7 @@ $(document).ready(function(){
 	var mouseOverWall=function(){
 	  // $(this).css({"background-color":"red"})
 	  $(this).addClass("youlose");
-	  touchwall=1;
+	  touchwall=0;
 	}
 	
 	var mouseOverEnd=function(){
