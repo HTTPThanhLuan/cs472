@@ -57,4 +57,7 @@ Javascript Scope Exercises
         Var emp1 = new Employee("Tom",2000,"Manager");
         Var emp2 = new Employee("David",1000,"Staff");
         Var emp3 = new Employee("Peter",2000,"Staff");
-    
+		
+10.  Write a Javascript function that takes any number of input arguments and returns the product of the arguments. 
+ 
+11.  Write an arrow function that returns the maximum of its three input arguments. 
