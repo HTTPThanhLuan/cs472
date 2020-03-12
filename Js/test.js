@@ -1,13 +1,12 @@
-var x=10 ; // global
-function f(){
-	var i=1;
-	
-	alert(i + x);
-	
-	var x=2;
-	
-	
-	
-}
-//console.log(x); //10
-f();
+var funcs = []; 
+
+for (let i = 0; i < 5; i++) 
+{
+	funcs[i] = function(i) {
+		return i; 
+	};
+}  
+
+console.log(funcs[0]());
+console.log(funcs[1]());
+
