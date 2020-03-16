@@ -22,7 +22,7 @@ $(document).ready(function(){
 		 touchwall=1;
 		 $(".boundary").removeClass ("youlose");
 		 
-		 $("#status").text("Click the 'S' to begin.");
+		 $("#status").text("Start.");
 		 
 	}
 	
