@@ -1,0 +1,23 @@
+body{
+	margin: 0px;
+}
+
+h1{
+	background-color:rgb(211,211,211);
+	margin: 0px;
+	padding: 10px;
+}
+
+.clookup{
+	padding: 10px;
+	background-color:rgb(238,238,238);
+}
+
+.copyright{
+	position: fixed;
+	text-align: right;
+	bottom: 100px;
+ 	right: 50px;
+ 	width: 300px;
+ 
+}
