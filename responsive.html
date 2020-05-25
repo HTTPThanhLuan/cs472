@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float:left;
+  width:20%;
+  text-align:center;
+  background-color:maroon;
+}
+.menu a {
+  padding:8px;
+  margin-top:7px;
+  display:block;
+  width:100%;
+  color:#fff;
+}
+.main {
+  float:left;
+  width:60%;
+  padding:0 20px;
+  background-color:lightcyan;
+}
+.submit {
+  background-color:maroon;
+   color:white;
+}
+
+@media only screen and (max-width:599px) {
+  /* For mobile phones: */
+  .menu, .main {
+    width:100%;
+  }
+}
+
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #dddddd;
+}
+
+td, th { 
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+input {
+  width:100%;
+  height: 40px;
+}
+.row{
+  margin:20px;
+}
+</style>
+</head>
+<body style="font-family:Verdana;color:#aaaaaa;">
+
+<div style="overflow:auto">
+  <div class="menu">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>    
+  </div>
+
+  <div class="main">
+      <form action="" method="post">
+		  <div class="row">
+			  <label for="fistName">FirstName</label><br>
+			  <input type="text" name="firstName"/>
+		  </div>
+		  <div class="row">
+			  <label for="lastname">LastName</label><br>
+			  <input type="text" name="lastName"/>
+		  </div>
+		  <div class="row">
+			  <label for="phone">Phone</label><br>
+			  <input type="text" name="phone"/>
+		  </div>
+		  <div class="row">
+			  <input class="submit" type="submit" value="Add to contacts"/>
+		  </div>
+	  </form>
+  </div>
+ 
+</div>
+<table>
+<tr>
+    <th>First name</th>
+    <th>Last Name</th>
+    <th>Phone </th>
+  </tr>
+  <tr>
+    <td>Allay</td>
+    <td>Jhonson</td>
+    <td>(202)234-3457</td>
+  </tr>
+  <tr>
+    <td>Rox</td>
+    <td>Bay</td>
+    <td>(382)234-3457</td>
+  </tr>
+  <tr>
+    <td>Jack</td>
+    <td>Boston</td>
+    <td>(546)234-3457</td>
+  </tr>
+</table>
+</body>
+</html>
